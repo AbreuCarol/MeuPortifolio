@@ -372,7 +372,7 @@ line-height: 0px;
     background-color: #ffffff;
     outline: none;
     border:rgba(0, 0, 0, 0.2);
-    font-size: 15px;
+    font-size: 12px;
     font-weight: bold;
 }
 
@@ -419,3 +419,6 @@ footer p:nth-child(2)
     bottom: 10px;
     transform: translateX(-50%);
 }
+
+.projeto
+{ color: inherit; }

@@ -5,10 +5,24 @@
     <meta charset="utf-8">
     <title>Meu portifólio</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.1/html2pdf.bundle.min.js"
+        integrity="sha512-vDKWohFHe2vkVWXHp3tKvIxxXg0pJxeid5eo+UjdjME3DBFBn2F8yWOE0XmiFcFbXxrEOR1JriWEno5Ckpn15A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
-<body>
+<body id="conteudo-geral">
+    <script type="text/javascript">
+        var pdf_content = document.getElementById("conteudo-geral");
+        var options = {
+            margin: 1,
+            filename: 'isolates.pdf',
+            image: { type: 'jpeg', quality: 0.98 },
+            html2canvas: { scale: 2 },
+            jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+        };
+                
 
+    </script>
     <!-- Navegador -->
 
     <section>
@@ -37,7 +51,7 @@
         <p>Desenvolvedora Front-End e Analista de Sistemas</p>
 
         <a href="#conteudo-sobre"><button class="btn1">Saiba mais</button></a>
-        <button class="btn2">Download CV</button>
+        <a target="_blank" href="https://www.linkedin.com/in/carolina-abreu-28b4831a9/"><button  class="btn2">CV Linkedin</button></a>
 
     </div>
 
@@ -85,7 +99,7 @@
 
         <div class="conteudo-box">
 
-            <a target="_blanck"
+            <a class="projeto" target="_blanck"
                 href="https://www.canva.com/design/DAEEmG2Tmgs/ndQsZVCsPzGXybg7tVU9cw/view?utm_content=DAEEmG2Tmgs&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">
                 <div class="box1">
                     <span>1</span>
@@ -102,7 +116,7 @@
                     </p>
                 </div>
             </a>
-            <a target="_blanck" href=https://github.com/AbreuCarol/Instagram.git>
+            <a class="projeto" target="_blanck" href=https://github.com/AbreuCarol/Instagram.git>
                 <div class="box2">
                     <span>2</span>
 
@@ -116,7 +130,7 @@
 
                 </div>
             </a>
-            <a target="_blanck" href=https://github.com/AbreuCarol/MeuPortifolio.git>
+            <a class="projeto" target="_blanck" href=https://github.com/AbreuCarol/MeuPortifolio.git>
                 <div class="box3">
                     <span>3</span>
 
@@ -135,7 +149,7 @@
 
     <!--Seção fale conosco-->
 
-    
+
     <div id="contato" class="contato">
         <p>Gostou do meu currículo? Entre em contato abaixo:
         </p>
